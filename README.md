@@ -1,7 +1,7 @@
 TicTacToe Game
 =========
 
-<p align="center"><a href="http://nikolov.cloudvps.bg/rockbands" target="_blank"><img src="https://raw.githubusercontent.com/flextry/Telerik-Academy/e19fc113f752e90eaf751a04ef7e78db63055aa3/Programming%20with%20C%23/Codes/Other/rock-band-3-instruments-banner.jpg" /></a></p>
+<p align="center"><a href="http://tic-tac-toe-game.apphb.com/" target="_blank"><img src="https://raw.githubusercontent.com/flextry/Tic-Tac-Toe-RestAPI/master/images/TicTacToe-photo-logo.jpg?token=3677691__eyJzY29wZSI6IlJhd0Jsb2I6ZmxleHRyeS9UaWMtVGFjLVRvZS1SZXN0QVBJL21hc3Rlci9pbWFnZXMvVGljVGFjVG9lLXBob3RvLWxvZ28uanBnIiwiZXhwaXJlcyI6MTQxMjI3NzEyOX0%3D--2d0753cce00814897532f951d557f0996874b697" /></a></p>
 
 **RESTful Web-Application powered by:**
 - [ASP.NET WebAPI](http://www.asp.net/web-api) - Repository Pattern + UnitOfWork + Ninject

@@ -24,7 +24,7 @@ ticTacToeApp.controller('GameStatusController',
             ticTacToeData
                 .getGameStatus($routeParams.id, auth.access_token())
                 .then(function (data) {
-                    if ($scope.board != data.Board) {
+                    if ($scope.board != data.Board || $scope.gameStatus !== data.State) {
                         $scope.gameId = data.Id;
                         $scope.board = data.Board;
                         $scope.gameStatus = data.State;
@@ -38,11 +38,12 @@ ticTacToeApp.controller('GameStatusController',
                         }
 
                         if (data.FirstPlayerName === $rootScope.username && data.State == 2 ||
-                            data.FirstPlayerName !== $rootScope.username && data.State == 1) {
+                            data.FirstPlayerName !== $rootScope.username && data.State == 1 ||
+                            data.State == 0) {
                             $scope.cursorClass = 'notAllowed';
                         }
 
-                        if ([0, 3, 4, 5].indexOf(data.State) !== -1) {
+                        if ([3, 4, 5].indexOf(data.State) !== -1) {
                             clearInterval(timer);
                             $scope.cursorClass = 'notAllowed';
                             return;
@@ -57,6 +58,11 @@ ticTacToeApp.controller('GameStatusController',
 
 
         $scope.click = function (row, col) {
+            if ($scope.currentPlayer === $scope.firstPlayer && $scope.gameStatus == 2 ||
+                $scope.currentPlayer === $scope.secondPlayer && $scope.gameStatus == 1) {
+                return;
+            }
+
             if ($scope.board[row * 3 + col] === '-' && [0, 3, 4, 5].indexOf($scope.gameStatus) === -1) {
                 ticTacToeData.playGame($scope.gameId, row + 1, col + 1, auth.access_token())
                     .then(function () {

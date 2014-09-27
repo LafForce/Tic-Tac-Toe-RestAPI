@@ -27,7 +27,7 @@ TicTacToe Game
 * See all available games and games they are joined in
 * Create new games
 * Join in _available_ game for playing
-* See game history of finished games (including game board status)
+* See game history of their finished games (including game board status)
 
 You can visit the web-application at: http://tic-tac-toe-game.apphb.com/
 

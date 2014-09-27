@@ -4,7 +4,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion></ProductVersion>
+    <ProductVersion>
+    </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A7391C40-180C-45AE-9CA7-B7F4B7669367}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -59,6 +60,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="scripts\controllers\list\ListGamesHistoryController.js" />
     <Content Include="scripts\lib\angular\angular-animate.min.js.map" />
     <Content Include="scripts\lib\angular\angular-cookies.min.js.map" />
     <Content Include="scripts\lib\angular\angular-loader.min.js.map" />
@@ -375,6 +377,7 @@
     <Content Include="templates\directives\modal-window.html" />
     <Content Include="templates\directives\navigation-bar.html" />
     <Content Include="templates\game-status.html" />
+    <Content Include="templates\list\games-history.html" />
     <Content Include="templates\list\games.html" />
     <Content Include="templates\list\scores.html" />
     <Content Include="templates\list\users.html" />
@@ -401,7 +404,8 @@
           <IISUrl>http://localhost:5555/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

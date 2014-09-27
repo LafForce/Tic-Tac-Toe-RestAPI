@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 div.navbar-collapse.collapse form.navbar-form.navbar-left.rockBands-search input {
     height: 35px;
     margin-top: 4px;
@@ -212,4 +218,9 @@ h3.gamePlayersInfo {
 
 h3.gameStatusInfo {
     margin-top: 25px;
+}
+
+button.refresh-btn {
+    margin-top: -5px;
+    margin-right: 5px;
 }

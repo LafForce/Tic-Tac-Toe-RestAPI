@@ -25,12 +25,15 @@ ticTacToeApp.controller('ListGamesController',
                 });
         }
 
-        ticTacToeData
-            .getMyGames(auth.access_token())
-            .then(function (data) {
-                $scope.myGames = data;
-            });
+        function getMyGames() {
+            ticTacToeData
+                .getMyGames(auth.access_token())
+                .then(function (data) {
+                    $scope.myGames = data;
+                });
+        }
 
+        getMyGames();
         getJoinedGames();
         getAvailableGames();
 
@@ -46,5 +49,9 @@ ticTacToeApp.controller('ListGamesController',
         $scope.playGame = function (gameId) {
             $location.path('/game/' + gameId);
         };
+
+        $scope.refreshAvailableGames = getAvailableGames;
+        $scope.refreshJoinedGames = getJoinedGames;
+        $scope.refreshMyGames = getMyGames;
     }
 );

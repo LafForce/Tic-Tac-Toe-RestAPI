@@ -14,6 +14,9 @@ var ticTacToeApp = angular.module('rockBandsApp', ['ngResource', 'ngRoute'])
             .when('/game/create', {
                 templateUrl: 'templates/create-game.html'
             })
+            .when('/games-history', {
+                templateUrl: 'templates/list/games-history.html'
+            })
             .when('/game/:id', {
                 templateUrl: 'templates/game-status.html'
             })
@@ -29,7 +32,7 @@ var ticTacToeApp = angular.module('rockBandsApp', ['ngResource', 'ngRoute'])
             .when('/registration', {
                 templateUrl: 'templates/auth/registration.html'
             })
-            .otherwise({redirectTo: '/'});
+            .otherwise({ redirectTo: '/' });
     })
     .constant('author', 'Martin Nikolov')
     .constant('copyright', 'Telerik Academy');

@@ -1,9 +1,9 @@
 <div class="container clearfix" ng-controller="ListGamesController" ng-cloak>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 big-text" ng-if="myGames">
-                <button class="btn btn-primary btn-sm refresh-btn" ng-click="refreshMyGames()"><span class="glyphicon glyphicon-refresh"></span></button>
-                <strong>Your games in progress:</strong>
+            <div class="col-md-6 big-text">
+                <button ng-if="myGames" class="btn btn-primary btn-sm refresh-btn" ng-click="refreshMyGames()"><span class="glyphicon glyphicon-refresh"></span></button>
+                <strong ng-if="myGames">Your games in progress:</strong>
             </div>
             <div class="col-md-6">
                 <a href="#/game/create" class="btn btn-primary pull-right">Create a new game</a>

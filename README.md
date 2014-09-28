@@ -31,4 +31,4 @@ TicTacToe Game
 
 You can visit the web-application at: http://tic-tac-toe-game.apphb.com/
 
-ASP.NET WebAPI Services: [Microsoft Azure](http://tictactoe-services.azurewebsites.net/)
+ASP.NET WebAPI Services: [AppHarbor](http://tic-tac-toe-services.apphb.com/) / ~~[Microsoft Azure](http://tictactoe-services.azurewebsites.net/)~~

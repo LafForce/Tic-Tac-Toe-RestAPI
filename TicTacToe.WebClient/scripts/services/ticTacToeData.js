@@ -1,7 +1,8 @@
 'use strict';
 
 ticTacToeApp.factory('ticTacToeData', function ($resource, $http, $q) {
-    var url = 'http://tictactoe-services.azurewebsites.net/';
+    //var url = 'http://tictactoe-services.azurewebsites.net/';
+    var url = 'http://tic-tac-toe-services.apphb.com/';
 
     function getGames(type, access_token) {
         var deferred = $q.defer();

@@ -16,6 +16,19 @@ TicTacToe Game
 * RESTful
 * Simple and Ease of Use
 
+**Public APIs**:
+* Login
+* Register
+* See all registered users
+* See Top 10 scores
+
+**Private APIs** (need registration):
+* Users can see all their own games
+* See all available games and games they are joined in
+* Create new games
+* Join in _available_ game for playing
+* See game history of their finished games (including game board status)
+
 You can visit the web-application at: http://tic-tac-toe-game.apphb.com/
 
 ASP.NET WebAPI Services: [Microsoft Azure](http://tictactoe-services.azurewebsites.net/)
